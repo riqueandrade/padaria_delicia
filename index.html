@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Padaria Delicia - Os melhores pães artesanais, bolos e doces da cidade. Tradição desde 1990 com sabor e qualidade incomparáveis.">
+    <meta name="keywords" content="padaria, pães artesanais, bolos, doces, café da manhã, confeitaria, produtos frescos">
+    <meta name="author" content="Padaria Delicia">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Padaria Delicia - Sabor e Qualidade desde 1990">
+    <meta property="og:description" content="Descubra o sabor autêntico de pães artesanais e doces irresistíveis na Padaria Delicia. Tradição e qualidade desde 1990.">
+    <meta property="og:image" content="https://www.padariadelicia.com/images/og-image.jpg">
+    <meta property="og:url" content="https://www.padariadelicia.com">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://www.padariadelicia.com">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <title>Padaria Delicia - Sabor e Qualidade desde 1990 | Pães Artesanais e Doces</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Adicione esta linha no <head> para incluir os ícones do Material Design -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">
+                <i class="fas fa-bread-slice logo-icon"></i>
+                Padaria Delicia
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio"><i class="fas fa-home"></i> Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#produtos"><i class="fas fa-bread-slice"></i> Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre"><i class="fas fa-store"></i> Sobre Nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="inicio" class="hero py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <h1 class="display-4 fw-bold mb-4">Bem-vindo à Padaria Delicia</h1>
+                        <p class="lead mb-4">Descubra o sabor autêntico de pães artesanais e doces irresistíveis. Feitos com amor e tradição desde 1990.</p>
+                        <a href="#produtos" class="btn btn-primary btn-lg">Conheça Nossos Produtos</a>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner rounded shadow" id="heroCarouselInner">
+                                <!-- As imagens serão inseridas aqui pelo JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="destaques" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="mb-4" data-aos="fade-up"><i class="material-icons">star</i> Destaques da Semana</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card h-100 border-primary">
+                            <div class="card-header bg-primary text-white">Promoção</div>
+                            <div class="card-body">
+                                <h3 class="card-title">Pão Integral</h3>
+                                <p class="card-text">Compre 2 e leve 3! Oferta válida até domingo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card h-100 border-success">
+                            <div class="card-header bg-success text-white">Novidade</div>
+                            <div class="card-body">
+                                <h3 class="card-title">Bolo Red Velvet</h3>
+                                <p class="card-text">Experimente nosso novo sabor de bolo!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card h-100 border-warning">
+                            <div class="card-header bg-warning text-dark">Mais Vendido</div>
+                            <div class="card-body">
+                                <h3 class="card-title">Pão de Queijo</h3>
+                                <p class="card-text">O favorito dos nossos clientes!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos" class="py-5">
+            <div class="container">
+                <h2 class="mb-4" data-aos="fade-up"><i class="material-icons">cake</i> Nossos Produtos</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="productContainer">
+                    <!-- Os produtos serão inseridos aqui pelo JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="mb-4" data-aos="fade-up"><i class="material-icons">photo_library</i> Galeria de Fotos</h2>
+                <div class="row" id="galeriaContainer">
+                    <!-- As imagens da galeria serão inseridas aqui pelo JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="horario" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="mb-4" data-aos="fade-up"><i class="material-icons">schedule</i> Horário de Funcionamento</h2>
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                        <table class="table table-striped" data-aos="fade-up" data-aos-delay="100">
+                            <tbody>
+                                <tr>
+                                    <td>Segunda a Sexta</td>
+                                    <td>6:00 - 20:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Sábado</td>
+                                    <td>7:00 - 18:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Domingo</td>
+                                    <td>7:00 - 12:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="py-5">
+            <div class="container">
+                <h2 class="mb-4" data-aos="fade-up"><i class="material-icons">store</i> Sobre a Padaria Delicia</h2>
+                <div class="row">
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <p>A Padaria Delicia é uma padaria familiar fundada em 1990 por João e Maria Silva. Nosso compromisso é oferecer produtos frescos e de alta qualidade todos os dias.</p>
+                        <p>Com mais de 30 anos de experiência, nos tornamos referência em pães artesanais e doces irresistíveis. Nossa equipe de padeiros apaixonados trabalha incansavelmente para trazer o melhor da tradição e inovação para sua mesa.</p>
+                        <p>Venha nos visitar e sinta o aroma de pão fresco e o calor do nosso atendimento!</p>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <figure class="figure">
+                            <img src="images/equipe-padaria.jpg" 
+                                 alt="Equipe da Padaria Delicia trabalhando na cozinha" 
+                                 class="img-fluid rounded">
+                            <figcaption class="figure-caption text-center mt-2">Nossa equipe dedicada trabalhando para trazer o melhor para você todos os dias.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="avaliacoes" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="mb-4" data-aos="fade-up"><i class="material-icons">star</i> Avaliações dos Clientes</h2>
+                <div id="avaliacoesContainer" class="row">
+                    <!-- As avaliações serão inseridas aqui pelo JavaScript -->
+                </div>
+                <div class="text-center mt-4">
+                    <button id="addAvaliacaoBtn" class="btn btn-primary">Adicionar Avaliação</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal para adicionar avaliação -->
+        <div class="modal fade" id="avaliacaoModal" tabindex="-1" aria-labelledby="avaliacaoModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="avaliacaoModalLabel">Adicionar Avaliação</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="avaliacaoForm">
+                            <div class="mb-3">
+                                <label for="nomeCliente" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="nomeCliente" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="avaliacaoTexto" class="form-label">Avaliação</label>
+                                <textarea class="form-control" id="avaliacaoTexto" rows="3" required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="avaliacaoEstrelas" class="form-label">Estrelas</label>
+                                <select class="form-select" id="avaliacaoEstrelas" required>
+                                    <option value="5">5 estrelas</option>
+                                    <option value="4">4 estrelas</option>
+                                    <option value="3">3 estrelas</option>
+                                    <option value="2">2 estrelas</option>
+                                    <option value="1">1 estrela</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar Avaliação</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="contato" class="py-5">
+            <div class="container">
+                <h2 class="mb-4" data-aos="fade-up"><i class="material-icons">email</i> Entre em Contato</h2>
+                <div class="row">
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Nome:</label>
+                                <input type="text" class="form-control" id="nome" name="nome" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">E-mail:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label">Mensagem:</label>
+                                <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <h3>Localização e Contato</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Rua da Padaria, 123 - Centro</p>
+                        <p>Cidade Feliz - Estado do Sabor</p>
+                        <p>CEP: 12345-678</p>
+                        <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+                        <p><i class="fas fa-envelope"></i> contato@padariadelicia.com</p>
+                        <h4 class="mt-4">Horário de Funcionamento</h4>
+                        <p>Segunda a Sexta: 6h às 20h</p>
+                        <p>Sábados: 7h às 18h</p>
+                        <p>Domingos e Feriados: 7h às 12h</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5>Padaria Delicia</h5>
+                    <p>Sabor e qualidade desde 1990</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua da Padaria, 123 - Centro</p>
+                    <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+                    <p><i class="fas fa-envelope"></i> contato@padariadelicia.com</p>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#inicio" class="text-white">Início</a></li>
+                        <li><a href="#produtos" class="text-white">Produtos</a></li>
+                        <li><a href="#sobre" class="text-white">Sobre Nós</a></li>
+                        <li><a href="#contato" class="text-white">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Siga-nos</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="mt-3">
+                        <h6>Horário de Funcionamento</h6>
+                        <p class="mb-0">Segunda a Sexta: 6h às 20h</p>
+                        <p class="mb-0">Sábados: 7h às 18h</p>
+                        <p>Domingos e Feriados: 7h às 12h</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p>&copy; 2023 Padaria Delicia. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white me-2">Política de Privacidade</a>
+                    <a href="#" class="text-white">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="btnVoltar" class="btn btn-primary btn-lg" title="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productModalLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="" alt="" class="img-fluid mb-3" id="productModalImage">
+            <p id="productModalDescription"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Adicione este modal no final do body, antes dos scripts -->
+    <div class="modal fade" id="pedidoModal" tabindex="-1" aria-labelledby="pedidoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pedidoModalLabel">Fazer Pedido</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="pedidoForm">
+                        <div class="mb-3">
+                            <label for="nomePedido" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nomePedido" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailPedido" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="emailPedido" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="produtoPedido" class="form-label">Produto</label>
+                            <input type="text" class="form-control" id="produtoPedido" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label for="quantidadePedido" class="form-label">Quantidade</label>
+                            <input type="number" class="form-control" id="quantidadePedido" min="1" value="1" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Pedido</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

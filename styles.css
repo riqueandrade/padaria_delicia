@@ -1,0 +1,621 @@
+/* Definição de variáveis CSS */
+:root {
+  --primary-color: #f4a460;
+  --secondary-color: #8B4513;
+  --background-color: #f9f5e7;
+  --text-color: #333;
+  --white: #fff;
+}
+
+/* Estilos gerais do corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    padding-top: 56px;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Estilos da navegação */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* Estilos do conteúdo principal */
+main {
+    padding-top: 50px; /* Ajuste conforme a altura do header */
+}
+
+section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos das imagens */
+.featured-image, .product img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.product {
+    margin-bottom: 2rem;
+}
+
+/* Estilos do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input, textarea {
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #343a40;
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer h5 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+footer .social-links a {
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: var(--primary-color) !important;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer ul li a {
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: var(--primary-color) !important;
+    text-decoration: none;
+}
+
+footer hr {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Estilos da barra de navegação */
+.navbar {
+    background-color: var(--primary-color) !important;
+}
+
+/* Estilos dos títulos */
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+/* Estilos dos botões primários */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+/* Estilos dos cards */
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Estilos das seções */
+#inicio, #sobre {
+    background-color: var(--background-color);
+}
+
+#produtos, #contato {
+    background-color: var(--white);
+}
+
+/* Estilos do carrossel */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Estilos para o botão de voltar ao topo */
+#btnVoltar {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 99;
+}
+
+/* Estilos da barra de navegação principal */
+#mainNav {
+    transition: background-color 0.3s ease-in-out;
+}
+
+#mainNav.navbar-scrolled {
+    background-color: var(--primary-color);
+}
+
+#mainNav.navbar-scrolled .navbar-brand,
+#mainNav.navbar-scrolled .nav-link {
+    color: var(--white);
+}
+
+.navbar-brand {
+    font-size: 1.2rem;
+}
+
+/* Estilos da seção hero */
+.hero {
+    background-color: #f8f9fa;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.hero .lead {
+    font-size: 1.25rem;
+    color: #6c757d;
+}
+
+.hero .btn-primary {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.hero .carousel-inner {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Estilos responsivos para a seção hero */
+@media (max-width: 991px) {
+    .hero {
+        text-align: center;
+        padding: 60px 0;
+    }
+
+    .hero .btn-primary {
+        margin-bottom: 30px;
+    }
+}
+
+/* Estilos para ícones */
+.material-icons {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Estilos responsivos adicionais */
+@media (max-width: 768px) {
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero .lead {
+        font-size: 1rem;
+    }
+
+    .hero .btn-primary {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .table {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero .lead {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .table {
+        font-size: 0.8rem;
+    }
+}
+
+/* Estilos para cards em telas menores */
+@media (max-width: 767px) {
+    .card {
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Estilos da barra de navegação personalizada */
+.custom-navbar {
+    background-color: rgba(244, 164, 96, 0.9);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+}
+
+.custom-navbar .navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.8rem;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+}
+
+.custom-navbar .logo-icon {
+    font-size: 2rem;
+    margin-right: 10px;
+    color: #FFD700; /* Cor dourada para o ícone */
+    transition: transform 0.3s ease;
+}
+
+.custom-navbar .navbar-brand:hover .logo-icon {
+    transform: rotate(20deg);
+}
+
+.custom-navbar .nav-link {
+    color: var(--white);
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+    margin: 0 0.2rem;
+    border-radius: 20px;
+}
+
+.custom-navbar .nav-link:hover {
+    color: var(--secondary-color);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.custom-navbar .navbar-toggler {
+    border-color: var(--white);
+}
+
+.custom-navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.custom-navbar.navbar-scrolled {
+    background-color: rgba(244, 164, 96, 1);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+@media (max-width: 991px) {
+    .custom-navbar .navbar-nav {
+        background-color: rgba(244, 164, 96, 0.95);
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+}
+
+/* Estilos para a galeria de fotos */
+#galeria .card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    height: 100%;
+    overflow: hidden;
+}
+
+#galeria .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#galeria .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+#galeria .card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+/* Estilos existentes ... */
+
+/* Ajustes para responsividade dos cards de produtos */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-body .btn-group {
+    margin-top: auto;
+}
+
+.card-body .btn {
+    flex: 1;
+}
+
+/* Ajustes específicos para telas menores */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 1rem; /* Reduz o padding para telas menores */
+    }
+
+    .card-body h3 {
+        font-size: 1.2rem; /* Reduz o tamanho do título */
+    }
+
+    .card-body p {
+        font-size: 0.9rem; /* Reduz o tamanho do texto */
+    }
+
+    .card-body .btn {
+        padding: 0.5rem; /* Ajusta o padding dos botões */
+        font-size: 0.9rem; /* Reduz o tamanho da fonte dos botões */
+    }
+}
+
+/* Estilos do container */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Ajustes responsivos para o container */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Ajustes responsivos adicionais */
+@media (max-width: 991px) {
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero .lead {
+        font-size: 1.1rem;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero .lead {
+        font-size: 1rem;
+    }
+
+    .card-body h3 {
+        font-size: 1.3rem;
+    }
+
+    .custom-navbar .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .custom-navbar .logo-icon {
+        font-size: 1.8rem;
+    }
+
+    #galeria .card-img-top {
+        height: 150px;
+    }
+}
+
+@media (max-width: 575px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero .lead {
+        font-size: 0.9rem;
+    }
+
+    .btn-primary {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .card-body h3 {
+        font-size: 1.2rem;
+    }
+
+    .card-body p {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer .col-md-4 {
+        margin-bottom: 30px;
+    }
+}
+
+/* Ajustes responsivos para o rodapé */
+@media (max-width: 767px) {
+    footer .col-md-4 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    footer .social-links {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
+
+/* Ajustes responsivos para a barra de navegação */
+@media (max-width: 991px) {
+    .custom-navbar .navbar-nav {
+        background-color: rgba(244, 164, 96, 0.95);
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .custom-navbar .nav-link {
+        padding: 10px 15px;
+        text-align: center;
+    }
+}
+
+/* Ajustes responsivos para o carrossel */
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 250px;
+    }
+}
+
+/* Ajustes responsivos para a seção de produtos */
+@media (max-width: 767px) {
+    #produtos .col-md-4 {
+        margin-bottom: 30px;
+    }
+
+    .card-body .btn-group {
+        flex-direction: column;
+    }
+
+    .card-body .btn-group .btn {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
+
+/* Estilos para a seção de contato */
+#contato h3 {
+    margin-top: 1.5rem;
+}
